@@ -147,14 +147,14 @@ public class ContactForm {
 		officePhoneLabel.setBounds(50, 150, 145, 25);
 		officePhone.setBounds(145, 150, 145, 25);
 
-		emailLabel.setBounds(350, 150, 145, 25);
-		email.setBounds(450, 150, 165, 25);
+		birthdayLabel.setBounds(350, 150, 145, 25);
+		birthday.setBounds(450, 150, 165, 25);
 
-		addressLabel.setBounds(50, 200, 145, 25);
-		address.setBounds(145, 200, 145, 25);
-
-		birthdayLabel.setBounds(350, 200, 145, 25);
-		birthday.setBounds(450, 200, 165, 25);
+		emailLabel.setBounds(50, 200, 145, 25);
+		email.setBounds(145, 200, 470, 25);
+		
+		addressLabel.setBounds(50, 250, 145, 25);
+		address.setBounds(145, 250, 470, 25);
 
 		add.setBounds(50, 350, 165, 40);
 		save.setBounds(240, 350, 185, 40);
