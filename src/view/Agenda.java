@@ -2,7 +2,6 @@ package view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.io.File;
 import java.util.Locale;
 
 import javax.swing.BorderFactory;
@@ -88,8 +87,7 @@ public class Agenda extends ContactForm {
 	 * Configuration of the inner elements and drawing on the Frame.
 	 */
 	private void configElements() {
-		String path = new File("").getAbsolutePath();
-		ImageIcon icon = new ImageIcon(path + "/src/images/logo.jpg");
+		ImageIcon icon = new ImageIcon(getClass().getResource("/images/logo.jpg"));
 		JLabel label = new JLabel();
 
 		// leftContainer.setBounds(10, 10, 150, 572);

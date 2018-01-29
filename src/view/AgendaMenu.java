@@ -3,7 +3,6 @@ package view;
 import javax.swing.JMenuBar;
 
 import java.awt.Image;
-import java.io.File;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -56,24 +55,22 @@ public class AgendaMenu {
 
 		optionsMenu.add(languageMenu);
 
-		String path = new File("").getAbsolutePath();
-
-		ImageIcon icon_save = new ImageIcon(path + "/src/images/germany.png");
+		ImageIcon icon_save = new ImageIcon(getClass().getResource("/images/germany.png"));
 		Image img = icon_save.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_save = new ImageIcon(img);
 		germanMenu = new JMenuItem("German", icon_save);
 
-		icon_save = new ImageIcon(path + "/src/images/england.png");
+		icon_save = new ImageIcon(getClass().getResource("/images/england.png"));
 		img = icon_save.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_save = new ImageIcon(img);
 		englishMenu = new JMenuItem("English", icon_save);
 
-		icon_save = new ImageIcon(path + "/src/images/france.png");
+		icon_save = new ImageIcon(getClass().getResource("/images/france.png"));
 		img = icon_save.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_save = new ImageIcon(img);
 		frenchMenu = new JMenuItem("French", icon_save);
 
-		icon_save = new ImageIcon(path + "/src/images/spain.png");
+		icon_save = new ImageIcon(getClass().getResource("/images/spain.png"));
 		img = icon_save.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_save = new ImageIcon(img);
 		spanishMenu = new JMenuItem("Spanish", icon_save);

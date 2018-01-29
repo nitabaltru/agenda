@@ -5,7 +5,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
-import java.io.File;
 import model.Contact;
 
 
@@ -65,19 +64,17 @@ public class ContactForm {
 		addressLabel = new JLabel("Address");
 		birthdayLabel = new JLabel("Birthday");
 
-		String path = new File("").getAbsolutePath();
-
-		ImageIcon icon_save = new ImageIcon(path + "/src/images/check.png");
+		ImageIcon icon_save = new ImageIcon(getClass().getResource("/images/check.png"));
 		Image img = icon_save.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_save = new ImageIcon(img);
 		save = new JButton("Save", icon_save);
 
-		ImageIcon icon_delete = new ImageIcon(path + "/src/images/delete.png");
+		ImageIcon icon_delete = new ImageIcon(getClass().getResource("/images/delete.png"));
 		img = icon_delete.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_delete = new ImageIcon(img);
 		delete = new JButton("Delete", icon_delete);
 
-		ImageIcon icon_new = new ImageIcon(path + "/src/images/add.png");
+		ImageIcon icon_new = new ImageIcon(getClass().getResource("/images/add.png"));
 		img = icon_new.getImage().getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon_new = new ImageIcon(img);
 		add = new JButton("New", icon_new);
