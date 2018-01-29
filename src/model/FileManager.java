@@ -209,6 +209,7 @@ public class FileManager {
 			properties = data;
 			this.writeToFile();
 		} else {
+			loadFile(this.basePath);
 			System.out.println("No Selection ");
 			if (preferences.get("filename", "").equals("")) {
 				System.exit(0);

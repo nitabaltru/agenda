@@ -247,11 +247,12 @@ public class Agenda extends ContactForm {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				model.getFileManager().writeToFile();
-				listModel.removeAllElements();
-				clearFields();
-
-				model.getFileManager().clearProperties();
-				model.getFileManager().launchDirectoryChooser(true);
+		        clearFields();
+		        model.getFileManager().clearProperties();
+		        model.getFileManager().launchDirectoryChooser(true);
+		        list.setSelectedIndex(0);
+		        listModel.removeAllElements();
+		        populateContactsList();
 			}
 		});
 
