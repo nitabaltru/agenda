@@ -147,7 +147,7 @@ public class Agenda extends ContactForm {
 		save.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
+				if(!name.getText().equals("")) {
 				System.out.println("Saving contact");
 				Random random = new Random(System.currentTimeMillis());
 				Contact contact;
@@ -176,6 +176,10 @@ public class Agenda extends ContactForm {
 				newContact = false;
 
 				refresh();
+				} else {
+					JOptionPane.showMessageDialog(window,
+							bundle.getString("empty"), "Oops...", JOptionPane.ERROR_MESSAGE);
+				}
 			}
 		});
 
