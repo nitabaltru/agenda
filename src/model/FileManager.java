@@ -27,7 +27,7 @@ public class FileManager {
 	private Properties properties;
 	private JFileChooser chooser;
 	private JDialog dialog;
-	private String basePath = "src/assets/basePath.dt";
+	private String basePath;
 	private Preferences preferences;
 
 	/**
@@ -209,8 +209,8 @@ public class FileManager {
 			properties = data;
 			this.writeToFile();
 		} else {
-			loadFile(this.basePath);
 			System.out.println("No Selection ");
+			loadFile(this.basePath);
 			if (preferences.get("filename", "").equals("")) {
 				System.exit(0);
 			}
